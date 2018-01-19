@@ -6,6 +6,7 @@ function OnLoad()
 
 function SelectRoom(roomIndex)
 {
+	document.getElementById("image").innerHTML = roomArray[roomIndex].image;
 	document.getElementById("roomTitle").innerHTML = roomArray[roomIndex].title;
 	document.getElementById("roomText").innerHTML = roomArray[roomIndex].text;
 	document.getElementById("roomChoices").innerHTML = "";
@@ -17,3 +18,39 @@ function SelectRoom(roomIndex)
 		document.getElementById("roomChoices").innerHTML += options;
 	}
 }
+function play_pause()
+		{
+
+			var myAudio = document.getElementById("music");
+			myAudio.volume =1;
+			if (myAudio.paused)
+			{
+					myAudio.play();
+			}
+				else
+			{
+					myAudio.pause();
+			}
+	}
+	function volumeUp()
+	{
+		var myAudio = document.getElementById("music");
+		myAudio.volume +=0.1;
+	}
+	function volumeDown()
+	{
+		var myAudio = document.getElementById("music");
+		myAudio.volume -=0.1;
+	}
+	function mute()
+	{
+		var myAudio = document.getElementById("music");
+		if(myAudio.volume>0)
+		{
+			myAudio.volume=0;
+		}
+		else if(myAudio.volume==0)
+		{
+			myAudio.volume=1;
+		}
+	}

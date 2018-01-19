@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Oneiroi</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="stylesheet.css" rel="stylesheet">
+    </head>
+      <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#MainPage">Oneiroi</a>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-cog"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">Credits</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron text-center">
+        <p>Choose your world</p>
+        <p>and escape the nightmare</p>
+      </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="Luca.png"></img>
+          </div>
+          <div class="col-sm-1">
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary">The Gods</button>
+              <button type="button" class="btn btn-primary">The Hero</button>
+              <button type="button" class="btn btn-primary">History</button>
+            </div>
+          </div>
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-4">
+            <center><a id="portal"><img src="blackhole.gif" class="img-circle"  width="250px" height="250px"></img></a></center>
+          </div>
+          <div class="col-sm-4">
+            <img src="Geras.png"></img>
+          </div>
+        </div>
+      </body>
+  </html>

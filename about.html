@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AINT151 Assignment</title>
+  <title>About Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,77 +9,82 @@
   <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="mainCSS.css" rel="stylesheet">
-  <script src="mainJavaScript.js"></script>
-  <style>
-  img
-  {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    visibility: visible;
-  }
-  @keyframes slide {
-      0% {
-        opacity: 0;
-        transform: translateX(70%);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
+  <link href="stylesheet.css" rel="stylesheet">
+  <script src="main.js"></script>
+  <script>
+  window.onload=function()
+    {
+        var myAudio=document.getElementById("music").play();
     }
-    @-webkit-keyframes slide {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateX(70%);
-      }
-      100% {
-        opacity: 1;
-        -webkit-transform: translateX(0%);
-      }
-    }
-  </style>
+  </script>
 </head>
 <body id="MainPage">
-  <audio id="music" src="Aboutme.mp3" loop="loop"></audio>
+  <audio id="music" src="restart.mp3" loop="loop"></audio>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target="#MainNav">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="Index.html">Oneiroi</a>
+        <a class="navbar-brand" href="homepage.html">Oneiroi</a>
       </div>
-      <div class="collapse navbar-collapse" id="MainNav">
+      <div class="nav navbar-nav navbar-right">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#FantasyGame">Fantasy Game</a></li>
-          <li><a href="#SteamGame">Steampunk Game</a></li>
-          <li><a href="#SciFiGame">Sci-fi Game</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a onClick="play_pause()"><span class="glyphicon glyphicon-cd"></span></a></li>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-cog"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Credits</a></li>
+              <li class="divider"></li>
+              <li><a data-toggle="modal" data-target="#myModal">Settings</a></li>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="jumbotron text-center">
-    <h1>Oneiroi</h1>
-    <p>About Me</p>
-    <p>-.-</p>
+  <div class="container" id="settings">
+    <div class = "modal fade" id="myModal">
+      <div class ="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">Settings</h4>
+          </div>
+
+          <div class="modal-body">
+            Play/Pause music
+            <a onClick="play_pause()"><span class="glyphicon glyphicon-play"></span></a>
+          </br>
+            Volume Control
+            <a onClick="volumeUp()"><span class="glyphicon glyphicon-volume-up"></span></a>
+            <a onClick="volumeDown()"><span class="glyphicon glyphicon-volume-down"></span></a>
+            <a onClick="mute()"><span class="glyphicon glyphicon-volume-off"></span></a>
+          </div>
+
+          <div class="modal-footer">
+            <a data-dismiss="modal">Close</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container">
-    <center><a href="#basics" data-toggle="collapse" class:"slide">
-        <img src="profile.jpg" class="img-circle person" alt="Random Name" width="255" height="270">
+  <div class="jumbotron text-center">
+    <p>About Me</p>
+    <p>Click on the mini me's like this one "<img src="MiniMe2.gif" class="img-circle"  width="80px" height="80px">"</img></p>
+    <p>To find out more about me</p>
+  </div>
+  <div id="About" class="container">
+    <center><a id="About" href="#basics" data-toggle="collapse" class:"slide">
+        <img src="Space Me.gif" class="img-circle"></img>
     </a></center>
     <div id="basics" class="collapse">
       <div class="well">
-        <h2> Nathaniel Kenji Lauron Bartholomew Honculada</h2>
-        <p>Perferred name: Kenji</p>
-        <p>Age: 20</p>
-        <p>Birthday: 8th of January</p>
+        <h2> Nathaniel Kenji Lauron Honculada</h2>
+        <h3>Perferred name: Kenji</h3>
+        <h3>What people call him anyway: Genji</h3>
+        <h3>Age: 21</h3>
+        <h3>Birthday: 8th of January 1997</h3>
       </div>
     </div>
   </div>
@@ -87,8 +92,8 @@
     <div class="col-sm-1">
     </div>
     <div class="col-sm-2">
-      <a href="#likes" data-toggle="collapse" >
-          <img src="profilePicture.jpg" class="img-circle person" alt="Random Name" width="255" height="270">
+      <a id="Likes" href="#likes" data-toggle="collapse" >
+          <img src="BlackwatchKenji.gif" class="img-circle person" alt="Random Name">
       </a>
     </div>
     <div class="col-sm-1">
@@ -97,7 +102,7 @@
       <div id="likes" class="collapse">
         <div class="well">
           <h2>Likes</h2>
-          <p> Anime, Food, Basketball, Playing Support</p>
+          <h3> Anime, Food, Basketball, Playing Support, Bass, Drawing</h3>
         </div>
       </div>
     </div>
@@ -111,14 +116,14 @@
       <div id="dislikes" class="collapse">
         <div class="well">
           <h2>Dislikes</h2>
-          <p> Toxic players, White people rice, People eating his food</p>
+          <h3> Toxic players, What lurks in the deepest parts of the ocean, People eating his food</h3>
         </div>
       </div>
     </div>
     <div class="col-sm-1">
     </div>
     <div class="col-sm-2">
-      <a href="#dislikes" data-toggle="collapse" >
+      <a id="Dislikes" href="#dislikes" data-toggle="collapse" >
           <img src="profile2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
     </div>

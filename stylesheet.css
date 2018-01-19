@@ -1,0 +1,290 @@
+body
+{
+  background-color: #F0E5C9;
+  background-image: url("shootingstar.gif");
+}
+#Help
+{
+  background-color: #F0E5C9;
+  background-image: url("sombra.gif");
+}
+.navbar
+{
+  border-width: 0px;
+  font-size: 40px;
+  font-family: 'Parisienne';
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar li a, .navbar .navbar-brand
+{
+  font-family: 'Parisienne';
+  color: #AFCDF2!important;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+.dropdown button
+{
+  background-image: url("shootingstar.gif");
+  color:#AFCDF2;
+  border-width:0px;
+  border-radius: 0px;
+  font-size: 30px;
+}
+.dropdown li a, .divider
+{
+  /*background-image: url("shootingstar.gif");*/
+  color:#AFCDF2;
+  border-width:0px;
+  border-radius: 0px;
+  font-size: 30px;
+}
+.dropdown-menu
+{
+  /*background-image: url("shootingstar.gif");*/
+  color:#AFCDF2;
+  border-width:0px;
+  border-radius: 0px;
+  font-size: 30px;
+}
+.dropdown button:active, button:link, button:hover
+{
+  background-image: url("shootingstar.gif");
+  color:#AFCDF2;
+  border-width:0px;
+  border-radius: 0px;
+  font-size: 30px;
+}
+.jumbotron
+{
+  background-color:#A68C69;
+  color: #F4F4F4;
+  font-family: 'Parisienne';
+  margin-top: 40px;
+  background-image: url("shootingstar.gif");
+  background-size: 500px 250px;
+
+}
+.jumbotron p
+{
+  font-size: 25px!important;
+  font-family: 'Parisienne';
+}
+.btn
+{
+  color:#AFCDF2;
+  border-width:0px;
+  border-radius: 0px;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0);
+  font-family: 'Parisienne';
+}
+
+#portal img
+{
+  opacity: 0.3;
+}
+#portal img:hover
+{
+  opacity: 1;
+}
+#portal div
+{
+  opacity:0;
+}
+#portal:hover div
+{
+  animation-name: fade;
+  -webkit-animation-name: fade;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  opacity:1;
+}
+
+/*img
+{
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  visibility: visible;
+}*/
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateX(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  .well
+  {
+    margin:10px;
+    background: rgba(91,108,127,0);
+    text-align: center;
+    border-radius: 25px;
+    border-width: 0px;
+  }
+  h1
+  {
+      font-family: 'Parisienne';
+      color: #FFF;
+      font-size: 80px !important;
+  }
+  h2 , #roomTitle
+  {
+      font-family: 'Parisienne';
+      color: #FFF;
+      font-size: 40px !important;
+  }
+  h3, #roomText
+  {
+      font-family: 'Raleway';
+      color: #FFF;
+      font-size: 20px !important;
+  }
+  h4
+  {
+      font-family: 'Parisienne';
+      color: #AFCDF2;
+      font-size: 40px !important;
+  }
+  #settings .modal-content
+  {
+    background-image: url("shootingstar.gif");
+  }
+  .modal-body, .modal-footer
+  {
+    font-size: 25px!important;
+    font-family: 'Parisienne';
+    color: #F4F4F4;
+  }
+  #Nyx
+  {
+    opacity: 0.4;
+  }
+  #roomChoices button
+{
+  font-family: "Raleway";
+  color: #F4F4F4;
+  font-size: 20px;
+  background: rgba(91,108,127,0);
+  margin: 5px;
+  border-radius: 25px;
+}
+#About img
+{
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  visibility: visible;
+}
+#Likes img
+{
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  visibility: visible;
+}
+#Dislikes img
+{
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 13s;
+  -webkit-animation-duration: 13s;
+  visibility: visible;
+}
+#SpaceMe img
+{
+  animation-name: fly;
+  -webkit-animation-name: fly;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  visibility: visible;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @keyframes fly {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      25%{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      75% {
+        opacity: 0;
+        transform: translateY(-70%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes fly{
+      0% {
+        opacity: 0;
+        transform: translateX(70%);
+      }
+      25%{
+        opacity: 1;
+        transform: translateX(0%);
+      }
+      75% {
+        opacity: 0;
+        transform: translateX(-70%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }

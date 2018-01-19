@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Oneiroi</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+      <link href="stylesheet.css" rel="stylesheet">
+      <script src="main.js"></script>
+      <script>
+      window.onload=function()
+        {
+            var myAudio=document.getElementById("music").play();
+        }
+      </script>
+    </head>
+      <body>
+        <audio id="music" src="song.mp3" loop="loop"></audio>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#MainPage">Oneiroi</a>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-cog"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">About Me</a></li>
+                  <li><a href="Credits.html">Credits</a></li>
+                  <li class="divider"></li>
+                  <li><a data-toggle="modal" data-target="#myModal">Settings</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container" id="settings">
+        <div class = "modal fade" id="myModal">
+          <div class ="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h4 class="modal-title">Settings</h4>
+              </div>
+
+              <div class="modal-body">
+                Play/Pause music:
+                <a onClick="play_pause()"><span class="glyphicon glyphicon-play"></span></a>
+              </br>
+                Volume Control </br> Up:
+                <a onClick="volumeUp()"><span class="glyphicon glyphicon-volume-up"></span></a>
+                Down:
+                <a onClick="volumeDown()"><span class="glyphicon glyphicon-volume-down"></span></a>
+                Mute:
+                <a onClick="mute()"><span class="glyphicon glyphicon-volume-off"></span></a>
+              </div>
+
+              <div class="modal-footer">
+                <a data-dismiss="modal">Close</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron text-center">
+        <p>Choose your world</p>
+        <p>and escape the nightmare</p>
+      </div>
+      <center><div class="btn-group">
+        <button type="button" class="btn btn-primary">The Gods</button>
+        <button type="button" class="btn btn-primary" >The Hero</button>
+        <button type="button" class="btn btn-primary">History</button>
+      </div></center>
+        <div class="row">
+          <div class="col-sm-4">
+            <center><a id="portal" href="Game.html">
+              <img src="portal.gif" class="img-circle"  width="250px" height="250px"></img>
+              <div class="well">
+                <h2>"Where Sleeping Monsters Lie"</h2>
+              </div>
+            </a>
+          </center>
+          </div>
+          <div class="col-sm-4">
+              <center><a id="portal" href="UnderMaintenance.html">
+                <img src="portal.gif" class="img-circle"  width="250px" height="250px" style="margin-top:60px;"></img>
+                <div class="well">
+                  <h2>"And the Angels Descended"</h2>
+                </div>
+              </a></center>
+          </div>
+          <div class="col-sm-4">
+              <center><a id="portal" href="UnderMaintenance.html">
+                <img src="portal.gif" class="img-circle"  width="250px" height="250px"></img>
+                <div class="well">
+                  <h2>"And Promised us Immortality"</h2>
+                </div>
+              </a></center>
+          </div>
+        </div>
+
+      </body>
+  </html>

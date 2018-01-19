@@ -49,7 +49,7 @@ var roomArray = [
 			{
 				text:'\"Who are you?\"',
 				index:1
-			},
+			}
 		]
 	},
 	{
@@ -69,7 +69,8 @@ var roomArray = [
 		text:'You close your eyes and give in to the void. You never wake up again.',
 		choices:[
 			{
-				text:'<a href="deathScreen.html">\"Continue\"</a>',
+				text:'Continue',
+				index:0
 			}
 		]
 	},
@@ -205,7 +206,7 @@ var roomArray = [
 		text:'\"I cannot help you in this endevour, we Primodial Gods have been forbidden from ever interfering with the human world. You can blame Mother Earth for that as she was the last one to interfere by having all humans and gods killed. However other sons are waiting for you through the portals behind me. They will be able to provide you with some help. I have said as much as I can say, go now and fixed my children for me.\"',
 		choices:[
 			{
-				text:'\"<a href="Index.html">Continue</a>\"',
+				text:'\"<a href="homepage.html">Continue</a>\"',
 			}
 		]
 	},

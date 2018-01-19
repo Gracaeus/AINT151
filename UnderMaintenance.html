@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="stylesheet.css" rel="stylesheet">
+  <script>
+  window.onload=function()
+    {
+        var myAudio=document.getElementById("music").play();
+    }
+  function play_pause()
+      {
+
+        var myAudio = document.getElementById("music");
+        myAudio.volume =1;
+        if (myAudio.paused)
+        {
+            myAudio.play();
+        }
+          else
+        {
+            myAudio.pause();
+        }
+    }
+    function volumeUp()
+    {
+      var myAudio = document.getElementById("music");
+      myAudio.volume +=0.1;
+    }
+    function volumeDown()
+    {
+      var myAudio = document.getElementById("music");
+      myAudio.volume -=0.1;
+    }
+    function mute()
+    {
+      var myAudio = document.getElementById("music");
+      if(myAudio.volume>0)
+      {
+        myAudio.volume=0;
+      }
+      else if(myAudio.volume==0)
+      {
+        myAudio.volume=1;
+      }
+    }
+  </script>
+  <style>
+
+  #About img
+  {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    visibility: visible;
+  }
+  #Likes img
+  {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    visibility: visible;
+  }
+  #Dislikes img
+  {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 13s;
+    -webkit-animation-duration: 13s;
+    visibility: visible;
+  }
+  #SpaceMe img
+  {
+    animation-name: fly;
+    -webkit-animation-name: fly;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    visibility: visible;
+  }
+  @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+    @keyframes fly {
+        0% {
+          opacity: 0;
+          transform: translateY(70%);
+        }
+        25%{
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        75% {
+          opacity: 0;
+          transform: translateY(-70%);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+      @-webkit-keyframes fly{
+        0% {
+          opacity: 0;
+          transform: translateX(70%);
+        }
+        25%{
+          opacity: 1;
+          transform: translateX(0%);
+        }
+        75% {
+          opacity: 0;
+          transform: translateX(-70%);
+        }
+        100%{
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+  </style>
+</head>
+<body id="Help">
+  <audio id="music" src="restart.mp3" loop="loop"></audio>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="homepage.html">Oneiroi</a>
+      </div>
+      <div class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-cog"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Credits</a></li>
+              <li class="divider"></li>
+              <li><a data-toggle="modal" data-target="#myModal">Settings</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="settings">
+    <div class = "modal fade" id="myModal">
+      <div class ="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">Settings</h4>
+          </div>
+
+          <div class="modal-body">
+            Play/Pause music
+            <a onClick="play_pause()"><span class="glyphicon glyphicon-play"></span></a>
+          </br>
+            Volume Control
+            <a onClick="volumeUp()"><span class="glyphicon glyphicon-volume-up"></span></a>
+            <a onClick="volumeDown()"><span class="glyphicon glyphicon-volume-down"></span></a>
+            <a onClick="mute()"><span class="glyphicon glyphicon-volume-off"></span></a>
+          </div>
+
+          <div class="modal-footer">
+            <a data-dismiss="modal">Close</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron text-center">
+    <p>Under Maintenance</p>
+    <p>This part of the website is under construction please comeback later"</p>
+
+  </div>
+  <div id="About" class="container">
+    <center><a id="About" href="#basics" data-toggle="collapse" class:"slide">
+        <img src="Space Me.gif" class="img-circle"></img>
+    </a></center>
+</body>
+</html>
