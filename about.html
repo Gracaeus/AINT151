@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AINT151 Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="mainCSS.css" rel="stylesheet">
+  <script src="mainJavaScript.js"></script>
+  <style>
+  img
+  {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    visibility: visible;
+  }
+  @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateX(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+<body id="MainPage">
+  <audio id="music" src="Aboutme.mp3" loop="loop"></audio>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#MainNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="Index.html">Oneiroi</a>
+      </div>
+      <div class="collapse navbar-collapse" id="MainNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#FantasyGame">Fantasy Game</a></li>
+          <li><a href="#SteamGame">Steampunk Game</a></li>
+          <li><a href="#SciFiGame">Sci-fi Game</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a onClick="play_pause()"><span class="glyphicon glyphicon-cd"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron text-center">
+    <h1>Oneiroi</h1>
+    <p>About Me</p>
+    <p>-.-</p>
+  </div>
+  <div class="container">
+    <center><a href="#basics" data-toggle="collapse" class:"slide">
+        <img src="profile.jpg" class="img-circle person" alt="Random Name" width="255" height="270">
+    </a></center>
+    <div id="basics" class="collapse">
+      <div class="well">
+        <h2> Nathaniel Kenji Lauron Bartholomew Honculada</h2>
+        <p>Perferred name: Kenji</p>
+        <p>Age: 20</p>
+        <p>Birthday: 8th of January</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+      <a href="#likes" data-toggle="collapse" >
+          <img src="profilePicture.jpg" class="img-circle person" alt="Random Name" width="255" height="270">
+      </a>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-6">
+      <div id="likes" class="collapse">
+        <div class="well">
+          <h2>Likes</h2>
+          <p> Anime, Food, Basketball, Playing Support</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-6">
+      <div id="dislikes" class="collapse">
+        <div class="well">
+          <h2>Dislikes</h2>
+          <p> Toxic players, White people rice, People eating his food</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+      <a href="#dislikes" data-toggle="collapse" >
+          <img src="profile2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+</body>
+</html>

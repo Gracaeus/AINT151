@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="mainCSS.css" rel="stylesheet">
+  <script src="mainJavaScript.js"></script>
+</head>
+<body>
+  <audio id="music" src="steampunkBGM.mp3" loop="loop"></audio>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#MainNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="Index.html">Oneiroi</a>
+      </div>
+      <div class="collapse navbar-collapse" id="MainNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#FantasyGame">Items</a></li>
+          <li><a href="#SteamGame">Overview</a></li>
+          <li><a href="#SciFiGame">Your God</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a onClick="play_pause()"><span class="glyphicon glyphicon-cd"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron text-center">
+    <h1>Oneiroi</h1>
+    <p>Thanatos</p>
+    <p>"And the angels descend"</p>
+  </div>
+  <div class="container">
+    <center><div class="well well-sm">
+      <form method="post" action="fantasyPlayer.html" onSubmit="StorePlayerData()">
+        <h2>Name:</h2><center><input type="text" name="playername" placeholder="name" /></center>
+        <br />
+        <h2>Age:</h2><center><input type="number" name="playerage" placeholder="age"/></center>
+        <br />
+        <h2>Class:</h2><select>
+          <option value="warrior">Warrior</option>
+          <option value="mage">Mage</option>
+          <option value="ranger">Ranger</option>
+          <option value="rogue">Rogue</option>
+        </select>
+        <br />
+        <button class="btn" type="submit"><center><span class="glyphicon glyphicon-ok-sign"></span> Submit</center></button>
+    </form>
+  <footer style="position:fixed; bottom:0;"><<img src="four.png" id="sheepAni"></footer>
+  <footer style="position:fixed; bottom:0;right:160px;"><<img src="four.png" id="sheepAni"></footer>
+</body>
+</html>
